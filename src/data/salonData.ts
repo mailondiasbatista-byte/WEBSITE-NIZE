@@ -1,0 +1,202 @@
+import { ServiceItem, GalleryItem, Testimonial, FAQItem } from '../types';
+
+export const SALON_INFO = {
+  name: 'Nize',
+  ownerName: 'Suainize',
+  subtitle: 'Hair Atelier',
+  fullName: 'Nize Hair Atelier por Suainize',
+  phoneDisplay: '07 18 47 40 93',
+  phoneRaw: '212718474093',
+  email: 'contact@nize-hair.com',
+  address: 'Liceu Técnico (Lycée Technique)',
+  cityState: 'Settat, Marrocos',
+  hoursWeekdays: 'Segunda a Sábado: 09h00 às 20h00',
+  hoursWeekend: 'Domingo: Atendimento sob agendamento',
+  googleMapsUrl: 'https://maps.google.com/?q=Lyc%C3%A9e+Technique+Settat+Maroc',
+  mapsEmbedSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13382.520468087957!2d-7.6253456!3d32.997204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda6054817a15db1%3A0x6b453ec4a39055bd!2sLyc%C3%A9e%20Technique%2C%20Settat!5e0!3m2!1sfr!2sma!4v1680000000000!5m2!1sfr!2sma',
+  instagram: 'https://instagram.com/usuario',
+  instagramHandle: '@usuario',
+  tiktok: 'https://tiktok.com',
+  pinterest: 'https://pinterest.com',
+};
+
+export const SERVICES_DATA: ServiceItem[] = [
+  {
+    id: 'box-braids-knotless',
+    title: 'Tranças Box Braids & Knotless',
+    category: 'coloracao',
+    categoryLabel: 'Tranças & Braids',
+    price: 'A partir de 150 DH',
+    duration: '~3h a 4h',
+    description: 'Tranças leves e confortáveis criadas com técnica knotless sem tração excessiva no couro cabeludo.',
+    iconName: 'sparkles',
+  },
+  {
+    id: 'trancas-nago',
+    title: 'Tranças Nagô Rasteiras & Desenhadas',
+    category: 'cortes',
+    categoryLabel: 'Tranças Nagô',
+    price: 'A partir de 100 DH',
+    duration: '~1h 30min',
+    description: 'Desenhos geométricos radiais (sol) ou linhas retas com divisões limpas e simetria impecável.',
+    iconName: 'scissors',
+  },
+  {
+    id: 'fulani-penteados',
+    title: 'Penteados Afro & Fulani Braids',
+    category: 'coloracao',
+    categoryLabel: 'Penteados Afro',
+    price: 'A partir de 180 DH',
+    duration: '~2h 30min',
+    description: 'Estilos personalizados com detalhes frontais, trançado trabalhado e acabamento sofisticado.',
+    iconName: 'palette',
+  },
+  {
+    id: 'twists-passion',
+    title: 'Passion Twists & Marley Twists',
+    category: 'tratamentos',
+    categoryLabel: 'Twists',
+    price: 'A partir de 160 DH',
+    duration: '~3h',
+    description: 'Torções leves e volumosas de visual marcante e alta durabilidade.',
+    iconName: 'wind',
+  },
+  {
+    id: 'nutricao-pos-trança',
+    title: 'Higienização & Nutrição Capilar',
+    category: 'tratamentos',
+    categoryLabel: 'Tratamentos',
+    price: '100 DH',
+    duration: '~1h',
+    description: 'Tratamento intensivo de umectação com óleos vegetais e restauração da fibra capilar.',
+    iconName: 'droplet',
+  },
+  {
+    id: 'consultoria-suainize',
+    title: 'Consultoria de Estilo com Suainize',
+    category: 'cortes',
+    categoryLabel: 'Consultoria',
+    price: '80 DH',
+    duration: '~30min',
+    description: 'Sessão individual para escolher o comprimento, modelo de trança e cor ideal para o seu perfil.',
+    iconName: 'heart-handshake',
+  },
+];
+
+export const GALLERY_DATA: GalleryItem[] = [
+  {
+    id: 'knotless-box-braids',
+    title: 'Knotless Box Braids Impecáveis',
+    category: 'Tranças',
+    tag: 'Box Braids',
+    imageUrl: '/assets/aistudio/WhatsApp_Image_2026-10-27_at_22.17.23_96bd736b.jpeg',
+    description: 'Tranças finas e alinhadas produzidas com técnica leve sem dor (knotless) pela especialista Suainize.',
+    technique: 'Knotless Box Braids de Alta Precisão',
+  },
+  {
+    id: 'nago-radial-sol',
+    title: 'Trança Nagô Radial Geométrica',
+    category: 'Tranças Nagô',
+    tag: 'Nagô Sol',
+    imageUrl: '/assets/aistudio/WhatsApp_Image_2026-10-27_at_22.17.23__1__efb279a0.jpeg',
+    description: 'Design de trança nagô em formato circular simulando raios de sol com simetria perfeita no couro cabeludo.',
+    technique: 'Trançado Nagô Artístico',
+  },
+  {
+    id: 'box-braids-divisao',
+    title: 'Divisão Geométrica Quadrada',
+    category: 'Tranças',
+    tag: 'Box Braids Premium',
+    imageUrl: '/assets/aistudio/WhatsApp_Image_2026-10-27_at_22.17.23__2__0ea29283.jpeg',
+    description: 'Raízes bem quadradas e limpas com acabamento hidratado e caimento fluido.',
+    technique: 'Divisão com Pomada Fixadora Modeladora',
+  },
+  {
+    id: 'nago-rasteira-alinhada',
+    title: 'Trança Nagô Rasteira de Precisão',
+    category: 'Tranças Nagô',
+    tag: 'Nagô Rasteira',
+    imageUrl: '/assets/aistudio/WhatsApp_Image_2026-10-27_at_22.17.24_1c8f8774.jpeg',
+    description: 'Linhas retas e alinhadas de trás para frente com acabamento firme e caimento natural.',
+    technique: 'Trança Nagô Clássica Fio a Fio',
+  },
+  {
+    id: 'suainize-portrait',
+    title: 'Suainize · Fundadora & Hair Specialist',
+    category: 'Especialista',
+    tag: 'Suainize Nize',
+    imageUrl: '/assets/aistudio/WhatsApp_Image_2026-10-27_at_22.15.18_623e0d2b.jpeg',
+    description: 'Conheça Suainize, a trancista e especialista em beleza capilar responsável pelas criações do Nize Hair Atelier.',
+    technique: 'Atendimento Exclusivo Hora Marcada',
+  },
+  {
+    id: 'suainize-style',
+    title: 'Estilo & Autenticidade Nize',
+    category: 'Atelier Vibe',
+    tag: 'Conceito Nize',
+    imageUrl: '/assets/aistudio/WhatsApp_Image_2026-10-27_at_22.12.57_aacb3bbe.jpeg',
+    description: 'Conceito de elegância, autoestima e cuidado capilar promovido por Suainize no Nize Hair Atelier em Settat.',
+    technique: 'Visagismo & Consultoria de Estilo',
+  },
+];
+
+export const TESTIMONIALS_DATA: Testimonial[] = [
+  {
+    id: '1',
+    name: 'Yasmine Bennani',
+    role: 'Cliente de Settat',
+    comment: 'A Suainize faz as melhores tranças de Settat! A mão é superfirme e leve, não dói nada e a divisão fica absolutamente perfeita no salão Nize.',
+    rating: 5,
+    initials: 'YB',
+  },
+  {
+    id: '2',
+    name: 'Salma El Amrani',
+    role: 'Cliente de Box Braids',
+    comment: 'As tranças knotless duraram mais de um mês sem soltar fio nenhum! Suainize é uma verdadeira artista no salão Nize.',
+    rating: 5,
+    initials: 'SA',
+  },
+  {
+    id: '3',
+    name: 'Kenza Tazi',
+    role: 'Cliente de Nagô',
+    comment: 'Fiz a trança nagô desenhada pro meu evento e todo mundo elogiou. Atendimento super atencioso perto do Liceu Técnico.',
+    rating: 5,
+    initials: 'KT',
+  },
+];
+
+export const FAQ_DATA: FAQItem[] = [
+  {
+    id: 'faq-1',
+    question: 'Onde fica localizado o salão Nize da Suainize?',
+    answer: 'Estamos localizados em Settat, na região do Liceu Técnico (Lycée Technique), em um espaço acolhedor e privado.',
+  },
+  {
+    id: 'faq-2',
+    question: 'Quanto tempo duram as tranças e knotless braids?',
+    answer: 'Com os cuidados recomendados por Suainize, as tranças knotless e box braids duram de 4 a 6 semanas mantendo o brilho e a raiz bonita.',
+  },
+  {
+    id: 'faq-3',
+    question: 'As tranças machucam ou puxam o cabelo?',
+    answer: 'Não! Suainize trabalha com a técnica knotless (sem nó excessivo na raiz), preservando a saúde do couro cabeludo e garantindo zero dor.',
+  },
+  {
+    id: 'faq-4',
+    question: 'Como faço para agendar meu horário com a Suainize?',
+    answer: 'Você pode agendar pelo formulário do site ou clicar no botão de WhatsApp (0718474093) para combinar o dia e modelo desejado.',
+  },
+  {
+    id: 'faq-5',
+    question: 'É preciso levar o material de trança?',
+    answer: 'Ao agendar com a Suainize pelo WhatsApp, alinhamos o tipo de fibra necessária ou se você prefere que disponibilizemos no atelier.',
+  },
+];
+
+export const TIME_SLOTS_BY_SHIFT: Record<string, string[]> = {
+  'Manhã (09h - 12h)': ['09:00', '09:30', '10:00', '10:30', '11:00'],
+  'Tarde (13h - 17h)': ['13:00', '14:00', '15:00', '16:00', '16:30'],
+  'Fim de Tarde / Noite (17h - 20h)': ['17:00', '17:30', '18:00', '19:00'],
+};
